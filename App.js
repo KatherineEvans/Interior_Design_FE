@@ -13,7 +13,7 @@ import {
   Right,
   Icon
 } from "native-base";
-import NavFootLanding from './additions/NavFootLanding';
+import NavFoot from './additions/NavFootLanding';
 import NavHead from './additions/NavHead';
 import WelcomeMessage from './additions/WelcomeMessage';
 
@@ -23,7 +23,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
       <NavHead />
       <WelcomeMessage />
-      <NavFootLanding />
+      <NavFoot />
       </View>
     );
   }

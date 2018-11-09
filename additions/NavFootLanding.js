@@ -19,9 +19,9 @@ class NavFootLanding extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      tab1: true,
+      tab1: false,
       tab2: false,
-      // tab3: true,
+      tab3: false,
       // tab4: false
     };
   }
@@ -29,7 +29,7 @@ class NavFootLanding extends Component {
     this.setState({
       tab1: true,
       tab2: false,
-      // tab3: false,
+      tab3: false,
       // tab4: false
     });
   }
@@ -37,18 +37,18 @@ class NavFootLanding extends Component {
     this.setState({
       tab1: false,
       tab2: true,
-      // tab3: false,
+      tab3: false,
       // tab4: false
     });
   }
-  // toggleTab3() {
-  //   this.setState({
-  //     tab1: false,
-  //     tab2: false,
-  //     tab3: true,
-  //     tab4: false
-  //   });
-  // }
+  toggleTab3() {
+    this.setState({
+      tab1: false,
+      tab2: false,
+      tab3: true,
+      // tab4: false
+    });
+  }
   // toggleTab4() {
   //   this.setState({
   //     tab1: false,
@@ -68,6 +68,9 @@ class NavFootLanding extends Component {
             </Button>
             <Button active={this.state.tab2} onPress={() => this.toggleTab2()}>
               <Text>Sign Up</Text>
+            </Button>
+            <Button active={this.state.tab2} onPress={() => this.toggleTab2()}>
+              <Text>Camera</Text>
             </Button>
           </FooterTab>
         </Footer>
