@@ -69,7 +69,7 @@ class NavFootLanding extends Component {
             <Button active={this.state.tab2} onPress={() => this.toggleTab2()}>
               <Text>Sign Up</Text>
             </Button>
-            <Button active={this.state.tab2} onPress={() => this.toggleTab2()}>
+            <Button active={this.state.tab3} onPress={() => this.toggleTab3()}>
               <Text>Camera</Text>
             </Button>
           </FooterTab>
